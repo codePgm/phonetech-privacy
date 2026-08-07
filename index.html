@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>폰테크 개인정보처리방침</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.5rem; padding-bottom: .4rem; border-bottom: 1px solid #e5e7eb; }
+  .meta { color: #6b7280; font-size: .9rem; margin-bottom: 2rem; }
+  .callout {
+    background: #f1f5f9;
+    border-left: 3px solid #3182f6;
+    padding: 1rem 1.15rem;
+    border-radius: .35rem;
+    margin: 1.5rem 0;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #e5e7eb; padding: .6rem .75rem; text-align: left; vertical-align: top; }
+  th { background: #f8fafc; font-weight: 600; }
+  code { background: #f1f5f9; padding: .1rem .35rem; border-radius: .25rem; font-size: .9em; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e7eb; background: #16181c; }
+    h2 { border-bottom-color: #2e3238; }
+    .meta { color: #9aa3ad; }
+    .callout { background: #1c2430; border-left-color: #4d90fe; }
+    th, td { border-color: #2e3238; }
+    th { background: #1e2126; }
+    code { background: #23272e; }
+  }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<p class="meta">애플리케이션: 폰테크 (com.phonecalc.phone_management)<br>
+시행일: 2026년 8월 7일</p>
+
+<p>본 방침은 <strong>폰테크</strong>(이하 "본 앱")가 이용자의 정보를 어떻게 취급하는지 설명합니다.</p>
+
+<div class="callout">
+  <strong>핵심 요약</strong><br>
+  본 앱은 별도의 서버를 운영하지 않습니다. 이용자가 입력한 모든 정보는
+  <strong>이용자의 기기 안에만 저장</strong>되며, 개발자를 포함한 누구에게도 전송되지 않습니다.
+  본 앱은 광고 네트워크나 분석 도구를 사용하지 않습니다.
+</div>
+
+<h2>1. 수집하는 정보</h2>
+<p>본 앱은 이용자에게 어떠한 정보도 <em>요구하거나 자동으로 수집하지 않습니다.</em> 회원가입이나 로그인 절차가 없습니다.</p>
+<p>다만 이용자가 앱의 기능을 사용하기 위해 <strong>직접 입력한</strong> 다음 정보가 기기에 저장됩니다.</p>
+
+<table>
+  <thead><tr><th>항목</th><th>저장 목적</th></tr></thead>
+  <tbody>
+    <tr><td>전화번호, 회선 별칭</td><td>이용자가 관리 중인 회선을 구분하기 위함</td></tr>
+    <tr><td>개통일, 약정 기간</td><td>남은 약정 기간 및 만료일 계산</td></tr>
+    <tr><td>통신사, 요금제, 할부 정보, 부가서비스</td><td>월 납부액 및 총 비용 계산</td></tr>
+    <tr><td>계산기에 입력한 값, 저장한 계산 결과</td><td>이용자가 저장을 선택한 계산 내역의 재확인</td></tr>
+    <tr><td>이용자가 추가한 사이트 링크</td><td>이용자 지정 바로가기 목록 제공</td></tr>
+  </tbody>
+</table>
+
+<p>위 정보는 Android가 제공하는 앱 전용 저장 영역(<code>SharedPreferences</code>)에 보관되며,
+다른 앱이나 외부에서 접근할 수 없습니다.</p>
+
+<h2>2. 정보의 전송 및 제3자 제공</h2>
+<ul>
+  <li>본 앱은 <strong>인터넷을 통해 이용자의 정보를 전송하지 않습니다.</strong></li>
+  <li>개발자는 이용자가 입력한 정보를 <strong>수집하거나 열람할 수 없습니다.</strong></li>
+  <li>본 앱은 이용자의 정보를 제3자에게 제공하거나 판매하지 않습니다.</li>
+  <li>본 앱에는 광고 SDK, 분석 SDK, 크래시 리포팅 도구가 포함되어 있지 않습니다.</li>
+</ul>
+
+<h2>3. 기기 기능 사용</h2>
+<table>
+  <thead><tr><th>기능</th><th>사용 방식</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>전화 걸기</td>
+      <td>이용자가 회선의 통화 버튼을 누르면 기기의 <strong>기본 전화 앱을 열어 번호를 입력해 둡니다.</strong>
+          실제 통화는 이용자가 직접 걸어야 하며, 본 앱은 통화 기록이나 통화 내용에 접근하지 않습니다.
+          본 앱은 통화·연락처 권한을 요청하지 않습니다.</td>
+    </tr>
+    <tr>
+      <td>외부 링크 열기</td>
+      <td>이용자가 링크를 누르면 기기의 기본 브라우저가 열립니다. 연결된 웹사이트에서의
+          정보 처리는 해당 사이트의 개인정보처리방침을 따르며, 본 앱은 관여하지 않습니다.</td>
+    </tr>
+    <tr>
+      <td>백업 · 복원</td>
+      <td>이용자가 백업을 실행하면 저장된 내용이 파일로 만들어지고, 이용자가 선택한 위치나 앱
+          (예: 파일 저장, 메신저 전송)으로 <strong>이용자의 조작에 의해서만</strong> 이동합니다.
+          복원 시에는 이용자가 직접 고른 파일만 읽습니다. 개발자는 이 파일에 접근할 수 없으며,
+          백업 파일을 외부 서비스에 보관할 경우 해당 서비스의 정책이 적용되므로 이용자의 관리가 필요합니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>4. 보유 기간 및 삭제 방법</h2>
+<p>본 앱은 정보를 기기에만 보관하므로, 삭제 여부는 전적으로 이용자가 결정합니다.</p>
+<ul>
+  <li>개별 항목 삭제: 앱 안에서 해당 회선이나 저장 내역을 삭제</li>
+  <li>전체 삭제: 기기의 <em>설정 &rarr; 애플리케이션 &rarr; 폰테크 &rarr; 저장공간 &rarr; 데이터 삭제</em></li>
+  <li><strong>앱을 삭제하면 저장된 모든 정보가 기기에서 함께 삭제됩니다.</strong>
+      개발자 측에 남는 사본은 존재하지 않습니다.</li>
+</ul>
+<p>별도로 내보낸 백업 파일은 앱 삭제 후에도 남으므로, 필요 없다면 이용자가 직접 지워야 합니다.</p>
+
+<h2>5. 이용자의 권리</h2>
+<p>모든 정보가 이용자의 기기에만 있으므로, 이용자는 앱 안에서 언제든지 직접 열람·수정·삭제할 수 있습니다.
+개발자가 보관하는 정보가 없어 별도의 열람·삭제 요청 절차는 필요하지 않습니다.</p>
+
+<h2>6. 아동의 개인정보</h2>
+<p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 수집하지 않습니다.
+앞서 밝힌 대로 본 앱은 연령과 무관하게 어떠한 이용자의 정보도 수집·전송하지 않습니다.</p>
+
+<h2>7. 보안</h2>
+<p>저장된 정보는 Android 운영체제가 제공하는 앱 샌드박스로 보호되어 다른 앱이 접근할 수 없습니다.
+다만 기기 자체의 분실·도난이나 루팅된 환경에서는 보호가 제한될 수 있으므로,
+화면 잠금 설정 등 기기 보안을 유지해 주시기 바랍니다.</p>
+
+<h2>8. 방침의 변경</h2>
+<p>본 방침이 변경되는 경우 이 페이지에 개정된 내용과 시행일을 게시합니다.
+중요한 변경이 있을 때에는 앱 업데이트를 통해 안내합니다.</p>
+
+<h2>9. 문의처</h2>
+<p>본 방침이나 개인정보 처리에 관한 문의는 아래로 연락해 주시기 바랍니다.</p>
+<p>이메일: <a href="mailto:rjsan123@naver.com">rjsan123@naver.com</a></p>
+
+</body>
+</html>
